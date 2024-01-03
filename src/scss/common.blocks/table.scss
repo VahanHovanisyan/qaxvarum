@@ -12,11 +12,18 @@
 		grid-template-columns: auto 1fr 1fr;
 	}
 
+	&__caption {
+		grid-column: 1 / -1;
+		grid-row: 1 / 2;
+		justify-items: center;
+		padding: 5px 0;
+		outline: 1px solid var(--dark-color);
+	}
+
 	&__header {
 	}
 
 	&__row {
-
 	}
 
 	&__heading {
@@ -31,7 +38,6 @@
 	}
 
 	&__body {
-
 	}
 
 	&__grafik-wrapper {

@@ -2,7 +2,7 @@ const disableScroll = () => {
 	const fixBlocks = document?.querySelectorAll('.fixed-block');
 	const pagePosition = window.scrollY;
 	const paddingOffset = `${(window.innerWidth - document.body.offsetWidth)
-			}px`;
+		}px`;
 
 	document.documentElement.style.scrollBehavior = 'none';
 	fixBlocks.forEach(el => { el.style.paddingRight = paddingOffset; });
@@ -21,32 +21,32 @@ const enableScroll = () => {
 	document.body.style.top = 'auto';
 	document.body.classList.remove('dis-scroll');
 	window.scroll({
-			top: pagePosition,
-			left: 0
+		top: pagePosition,
+		left: 0
 	});
 	document.body.removeAttribute('data-position');
 }
 
 function popup(popupElem, popupBtn) {
 	const popup = document.querySelector(popupElem);
-	document.addEventListener('mouseup', function (event) {
-			if (event.target.closest(popupBtn)) {
-					popup.classList.add('popup_open');
-					disableScroll();
-			}
-			if (event.target === popup || event.target.closest('.popup__close-button')) {
-					popup.classList.remove('popup_open');
-					setTimeout(() => {
-					enableScroll();
-					}, 300);
-					event.preventDefault();
-			}
+	document.addEventListener('click', function (event) {
+		if (event.target.closest(popupBtn)) {
+			popup.classList.add('popup_open');
+			disableScroll();
+		}
+		if (event.target === popup || event.target.closest('.popup__close-button')) {
+			popup.classList.remove('popup_open');
+			setTimeout(() => {
+				enableScroll();
+			}, 300);
+			event.preventDefault();
+		}
 	});
 	// Փակեք popup պատուհանը, երբ սեղմվում է ESC
 	window.addEventListener('keydown', (e) => {
-			if (e.key === "Escape") {
-					popup.classList.remove("popup_open")
-			}
+		if (e.key === "Escape") {
+			popup.classList.remove("popup_open")
+		}
 	});
 };
 
@@ -135,14 +135,14 @@ currentTabs.addEventListener('click', function (e) {
 	const tabsButtons = currentTabs.querySelectorAll('.tabs__button');
 	const getAllStudentsButton = e.target.closest('#get-all-students-button');
 
-
 	if (getAllStudentsButton) {
 		tabsPanels.forEach(tabsPanel => {
 			tabsPanel.classList.add('tabs__panel_active');
 			tabsPanel.querySelector('[data-grafik-table]').style.display = 'none';
 			tabsPanel.querySelector('[data-big-table]').style.display = 'grid';
 			tabsPanel.querySelector('[data-students-length]').style.display = 'block'
-			tabsPanel.querySelector('[data-students-length]').textContent = 'Քանակ։' + tabsPanel.querySelector('[data-big-table] .table__body').querySelectorAll('.table__row').length;
+			tabsPanel.querySelector('[data-students-length]').textContent = 'Քանակ։' +
+				tabsPanel.querySelector('[data-big-table] .table__body').querySelectorAll('.table__row').length;
 		})
 		tabsButtons.forEach(tabsButton => {
 			tabsButton.classList.add('tabs__button_active')
@@ -157,6 +157,9 @@ currentTabs.addEventListener('click', function (e) {
 			tabsPanel.classList.remove('tabs__panel_active');
 			if (tabsButton.id === tabsPanel.getAttribute('aria-labelledby')) {
 				tabsPanel.classList.add('tabs__panel_active');
+				tabsPanel.querySelectorAll('.table__caption').forEach(caption => {
+					caption.textContent = tabsButton.querySelector('[data-teacher-name]').textContent;
+				})
 			}
 		})
 		tabsButton.classList.add('tabs__button_active');
@@ -171,6 +174,9 @@ currentTabs.addEventListener('click', function (e) {
 		activeTabsPanel.querySelector('[data-big-table]').style.display = 'none'
 		activeTabsPanel.querySelector('[data-grafik-table]').style.display = 'grid'
 		activeTabsPanel.querySelector('[data-students-length]').style.display = 'none'
+
+		activeTabsPanel.querySelector('[data-grafik-table]').querySelector('[data-grafik-students-length]').textContent = 'Քանակ։' +
+			activeTabsPanel.querySelector('[data-grafik-table] .table__body').querySelectorAll('.table__row').length;
 	}
 })
 
