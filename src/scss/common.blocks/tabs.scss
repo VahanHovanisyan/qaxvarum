@@ -1,0 +1,37 @@
+.tabs__box-control {
+	max-width: 350px;
+	align-self: stretch;
+	display: flex;
+	flex-direction: column;
+	justify-content: start;
+	gap: 30px;
+}
+
+.tabs__nav {
+	display: flex;
+	align-items: baseline;
+	margin-bottom: 30px;
+}
+
+.tabs__panel {
+	display: none;
+}
+
+.tabs__list {
+	list-style: none;
+	display: flex;
+}
+
+.tabs__panel_active {
+	display: block;
+}
+
+// .tabs__button:focus {
+//   color: #fff;
+//   background-color: navy;
+// }
+
+.tabs__button_active {
+	background-color: var(--dark-color);
+	color: var(--light-color);
+}

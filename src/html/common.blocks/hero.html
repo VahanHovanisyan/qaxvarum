@@ -1,0 +1,965 @@
+<section class="hero">
+	<div class="hero__container container">
+		<h1 class="hero__title">Քաղաքային Վարում</h1>
+		<div class="hero__wrapper tabs" data-tabs="tabs">
+			<div class="tabs__nav">
+				<ul class="hero__list list-reset tabs__list">
+					<li class="hero__item tabs__item">
+						<button class="hero__button repeat-button tabs__button" type="button">
+							Էդգար Բաղդասայան
+							<span class="hero__tooltip">գրաֆիկ</span>
+						</button>
+					</li>
+					<li class="hero__item tabs__item">
+						<button class="hero__button repeat-button tabs__button" type="button">
+							Էդգար Բաղդասայան
+							<span class="hero__tooltip">գրաֆիկ</span>
+						</button>
+					</li>
+					<li class="hero__item tabs__item">
+						<button class="hero__button repeat-button tabs__button" type="button">
+							Էդգար Բաղդասայան
+							<span class="hero__tooltip">գրաֆիկ</span>
+						</button>
+					</li>
+					<li class="hero__item tabs__item">
+						<button class="hero__button repeat-button tabs__button" type="button">
+							Էդգար Բաղդասայան
+							<span class="hero__tooltip">գրաֆիկ</span>
+						</button>
+					</li>
+					<li class="hero__item tabs__item">
+						<button class="hero__button repeat-button tabs__button" type="button">
+							Էդգար Բաղդասայան
+							<span class="hero__tooltip">գրաֆիկ</span>
+						</button>
+					</li>
+					<li class="hero__item tabs__item">
+						<button class="hero__button repeat-button tabs__button" type="button">
+							Էդգար Բաղդասայան
+							<span class="hero__tooltip">գրաֆիկ</span>
+						</button>
+					</li>
+				</ul>
+				<div class="tabs__box-control">
+					<button class="repeat-button repeat-button_fill" id="get-all-students-button" type="button">բոլոր
+						ուսանողներե</button>
+					<button class="repeat-button repeat-button_fill" id="add-student-button" type="button">ավելացնել
+						ուսանող</button>
+				</div>
+			</div>
+
+			<div class="tabs__content">
+				<div class="tabs__panel">
+					<span class="table__students-length" data-students-length>Քանակ։</span>
+					<table class="table table-grid" data-big-table>
+						<thead class="table__header">
+							<tr class="table__row">
+								<th class="table__heading">№</th>
+								<th class="table__heading">Մնացորդ</th>
+								<th class="table__heading">ՈՒսանող</th>
+								<th class="table__heading">Հեռ</th>
+								<th class="table__heading">Ավարտ</th>
+								<th class="table__heading"><!-- Այստեղ պիտի դատարկ լինի արա)--></th>
+							</tr>
+						</thead>
+						<tbody class="table__body">
+							<tr class="table__row">
+								<td class="table__data table__data_count"></td>
+								<td class="table__data">10</td>
+								<td class="table__data">Պողոս Պողոսյան</td>
+								<td class="table__data">+37455622522</td>
+								<td class="table__data">01.10.2024</td>
+								<td class="table__data">
+									<button class="repeat-button repeat-button_fill repeat-button_small-circle"
+										type="button">գրառում)</button>
+									<button
+										class="repeat-button repeat-button_fill repeat-button_small-circle popup-date-time-open-button"
+										type="button">ժամեր</button>
+									<button class="repeat-button repeat-button_small-circle disabled-button"
+										type="button">գրառում)</button>
+								</td>
+							</tr>
+							<tr class="table__row">
+								<td class="table__data table__data_count"></td>
+								<td class="table__data">7</td>
+								<td class="table__data">Վարդան Վարդանյան</td>
+								<td class="table__data">+37455622522</td>
+								<td class="table__data">01.10.2024</td>
+								<td class="table__data">
+									<button class="repeat-button repeat-button_fill repeat-button_small-circle"
+										type="button">գրառում)</button>
+									<button
+										class="repeat-button repeat-button_fill repeat-button_small-circle popup-date-time-open-button"
+										type="button">ժամեր</button>
+									<button class="repeat-button repeat-button_small-circle disabled-button"
+										type="button">գրառում)</button>
+								</td>
+							</tr>
+							<tr class="table__row">
+								<td class="table__data table__data_count"></td>
+								<td class="table__data">0</td>
+								<td class="table__data">Վարդան Վարդանյան</td>
+								<td class="table__data">+37455622522</td>
+								<td class="table__data">01.10.2024</td>
+								<td class="table__data">
+									<button class="repeat-button repeat-button_fill repeat-button_small-circle"
+										type="button">գրառում)</button>
+									<button
+										class="repeat-button repeat-button_fill repeat-button_small-circle popup-date-time-open-button"
+										type="button">ժամեր</button>
+									<button class="repeat-button repeat-button_small-circle succes-button popup-table-open-button"
+										type="button"> գրառում)</button>
+								</td>
+							</tr>
+						</tbody>
+					</table>
+					<div class="table__grafik-wrapper" data-grafik-table>
+						<span class="table__filter-title">ֆիլտրում։ ըստ օրացույցի</span>
+						<span class="table__students-length" data-grafik-students-length>Քանակ։</span>
+						<table class="table table_grafik table-grid">
+							<thead class="table__header">
+								<tr class="table__row">
+									<th class="table__heading">№</th>
+									<th class="table__heading">Օր / ժամ</th>
+									<th class="table__heading">ՈՒսանող</th>
+								</tr>
+							</thead>
+							<tbody class="table__body">
+								<tr class="table__row">
+									<td class="table__data table__data_count"></td>
+									<td class="table__data">12.10.2023 / 13։00</td>
+									<td class="table__data">Պողոս Պողոսյան</td>
+								</tr>
+								<tr class="table__row">
+									<td class="table__data table__data_count"></td>
+									<td class="table__data">12.10.2023 / 13։00</td>
+									<td class="table__data">Վարդան Վարդանյան</td>
+								</tr>
+								<tr class="table__row">
+									<td class="table__data table__data_count"></td>
+									<td class="table__data">12.10.2023 / 13։00</td>
+									<td class="table__data">Վարդան Վարդանյան</td>
+								</tr>
+							</tbody>
+						</table>
+						<div class="table__grafik-control-box">
+							<button class="repeat-button repeat-button_fill repeat-button_small-circle" type="button">EMAIL</button>
+							<button class="repeat-button repeat-button_fill repeat-button_small-circle" type="button">PRINT</button>
+						</div>
+					</div>
+				</div>
+				<div class="tabs__panel">
+					<span class="table__students-length" data-students-length>Քանակ։</span>
+					<table class="table table-grid" data-big-table>
+						<thead class="table__header">
+							<tr class="table__row">
+								<th class="table__heading">№</th>
+								<th class="table__heading">Մնացորդ</th>
+								<th class="table__heading">ՈՒսանող</th>
+								<th class="table__heading">Հեռ</th>
+								<th class="table__heading">Ավարտ</th>
+								<th class="table__heading"><!-- Այստեղ պիտի դատարկ լինի արա)--></th>
+							</tr>
+						</thead>
+						<tbody class="table__body">
+							<tr class="table__row">
+								<td class="table__data table__data_count"></td>
+								<td class="table__data">10</td>
+								<td class="table__data">Պողոս Պողոսյան</td>
+								<td class="table__data">+37455622522</td>
+								<td class="table__data">01.10.2024</td>
+								<td class="table__data">
+									<button class="repeat-button repeat-button_fill repeat-button_small-circle"
+										type="button">գրառում)</button>
+									<button
+										class="repeat-button repeat-button_fill repeat-button_small-circle popup-date-time-open-button"
+										type="button">ժամեր</button>
+									<button class="repeat-button repeat-button_small-circle disabled-button"
+										type="button">գրառում)</button>
+								</td>
+							</tr>
+							<tr class="table__row">
+								<td class="table__data table__data_count"></td>
+								<td class="table__data">10</td>
+								<td class="table__data">Պողոս Պողոսյան</td>
+								<td class="table__data">+37455622522</td>
+								<td class="table__data">01.10.2024</td>
+								<td class="table__data">
+									<button class="repeat-button repeat-button_fill repeat-button_small-circle"
+										type="button">գրառում)</button>
+									<button
+										class="repeat-button repeat-button_fill repeat-button_small-circle popup-date-time-open-button"
+										type="button">ժամեր</button>
+									<button class="repeat-button repeat-button_small-circle disabled-button"
+										type="button">գրառում)</button>
+								</td>
+							</tr>
+							<tr class="table__row">
+								<td class="table__data table__data_count"></td>
+								<td class="table__data">7</td>
+								<td class="table__data">Վարդան Վարդանյան</td>
+								<td class="table__data">+37455622522</td>
+								<td class="table__data">01.10.2024</td>
+								<td class="table__data">
+									<button class="repeat-button repeat-button_fill repeat-button_small-circle"
+										type="button">գրառում)</button>
+									<button
+										class="repeat-button repeat-button_fill repeat-button_small-circle popup-date-time-open-button"
+										type="button">ժամեր</button>
+									<button class="repeat-button repeat-button_small-circle disabled-button"
+										type="button">գրառում)</button>
+								</td>
+							</tr>
+							<tr class="table__row">
+								<td class="table__data table__data_count"></td>
+								<td class="table__data">0</td>
+								<td class="table__data">Վարդան Վարդանյան</td>
+								<td class="table__data">+37455622522</td>
+								<td class="table__data">01.10.2024</td>
+								<td class="table__data">
+									<button class="repeat-button repeat-button_fill repeat-button_small-circle"
+										type="button">գրառում)</button>
+									<button
+										class="repeat-button repeat-button_fill repeat-button_small-circle popup-date-time-open-button"
+										type="button">ժամեր</button>
+									<button class="repeat-button repeat-button_small-circle succes-button popup-table-open-button"
+										type="button">գրառում)</button>
+								</td>
+							</tr>
+						</tbody>
+					</table>
+					<div class="table__grafik-wrapper" data-grafik-table>
+						<span class="table__filter-title">ֆիլտրում։ ըստ օրացույցի</span>
+						<span class="table__students-length" data-grafik-students-length>Քանակ։</span>
+						<table class="table table_grafik table-grid">
+							<thead class="table__header">
+								<tr class="table__row">
+									<th class="table__heading">№</th>
+									<th class="table__heading">Օր / ժամ</th>
+									<th class="table__heading">ՈՒսանող</th>
+								</tr>
+							</thead>
+							<tbody class="table__body">
+								<tr class="table__row">
+									<td class="table__data table__data_count"></td>
+									<td class="table__data">12.10.2023 / 13։00</td>
+									<td class="table__data">Պողոս Պողոսյան</td>
+								</tr>
+								<tr class="table__row">
+									<td class="table__data table__data_count"></td>
+									<td class="table__data">12.10.2023 / 13։00</td>
+									<td class="table__data">Պողոս Պողոսյան</td>
+								</tr>
+								<tr class="table__row">
+									<td class="table__data table__data_count"></td>
+									<td class="table__data">12.10.2023 / 13։00</td>
+									<td class="table__data">Վարդան Վարդանյան</td>
+								</tr>
+								<tr class="table__row">
+									<td class="table__data table__data_count"></td>
+									<td class="table__data">12.10.2023 / 13։00</td>
+									<td class="table__data">Վարդան Վարդանյան</td>
+								</tr>
+							</tbody>
+						</table>
+						<div class="table__grafik-control-box">
+							<button class="repeat-button repeat-button_fill repeat-button_small-circle" type="button">EMAIL</button>
+							<button class="repeat-button repeat-button_fill repeat-button_small-circle" type="button">PRINT</button>
+						</div>
+					</div>
+				</div>
+				<div class="tabs__panel">
+					<span class="table__students-length" data-students-length>Քանակ։</span>
+					<table class="table table-grid" data-big-table>
+						<thead class="table__header">
+							<tr class="table__row">
+								<th class="table__heading">№</th>
+								<th class="table__heading">Մնացորդ</th>
+								<th class="table__heading">ՈՒսանող</th>
+								<th class="table__heading">Հեռ</th>
+								<th class="table__heading">Ավարտ</th>
+								<th class="table__heading"><!-- Այստեղ պիտի դատարկ լինի արա)--></th>
+							</tr>
+						</thead>
+						<tbody class="table__body">
+							<tr class="table__row">
+								<td class="table__data table__data_count"></td>
+								<td class="table__data">10</td>
+								<td class="table__data">Պողոս Պողոսյան</td>
+								<td class="table__data">+37455622522</td>
+								<td class="table__data">01.10.2024</td>
+								<td class="table__data">
+									<button class="repeat-button repeat-button_fill repeat-button_small-circle"
+										type="button">գրառում)</button>
+									<button
+										class="repeat-button repeat-button_fill repeat-button_small-circle popup-date-time-open-button"
+										type="button">ժամեր</button>
+									<button class="repeat-button repeat-button_small-circle disabled-button"
+										type="button">գրառում)</button>
+								</td>
+							</tr>
+							<tr class="table__row">
+								<td class="table__data table__data_count"></td>
+								<td class="table__data">10</td>
+								<td class="table__data">Պողոս Պողոսյան</td>
+								<td class="table__data">+37455622522</td>
+								<td class="table__data">01.10.2024</td>
+								<td class="table__data">
+									<button class="repeat-button repeat-button_fill repeat-button_small-circle"
+										type="button">գրառում)</button>
+									<button
+										class="repeat-button repeat-button_fill repeat-button_small-circle popup-date-time-open-button"
+										type="button">ժամեր</button>
+									<button class="repeat-button repeat-button_small-circle disabled-button"
+										type="button">գրառում)</button>
+								</td>
+							</tr>
+							<tr class="table__row">
+								<td class="table__data table__data_count"></td>
+								<td class="table__data">10</td>
+								<td class="table__data">Պողոս Պողոսյան</td>
+								<td class="table__data">+37455622522</td>
+								<td class="table__data">01.10.2024</td>
+								<td class="table__data">
+									<button class="repeat-button repeat-button_fill repeat-button_small-circle"
+										type="button">գրառում)</button>
+									<button
+										class="repeat-button repeat-button_fill repeat-button_small-circle popup-date-time-open-button"
+										type="button">ժամեր</button>
+									<button class="repeat-button repeat-button_small-circle disabled-button"
+										type="button">գրառում)</button>
+								</td>
+							</tr>
+							<tr class="table__row">
+								<td class="table__data table__data_count"></td>
+								<td class="table__data">7</td>
+								<td class="table__data">Վարդան Վարդանյան</td>
+								<td class="table__data">+37455622522</td>
+								<td class="table__data">01.10.2024</td>
+								<td class="table__data">
+									<button class="repeat-button repeat-button_fill repeat-button_small-circle"
+										type="button">գրառում)</button>
+									<button
+										class="repeat-button repeat-button_fill repeat-button_small-circle popup-date-time-open-button"
+										type="button">ժամեր</button>
+									<button class="repeat-button repeat-button_small-circle disabled-button"
+										type="button">գրառում)</button>
+								</td>
+							</tr>
+							<tr class="table__row">
+								<td class="table__data table__data_count"></td>
+								<td class="table__data">0</td>
+								<td class="table__data">Վարդան Վարդանյան</td>
+								<td class="table__data">+37455622522</td>
+								<td class="table__data">01.10.2024</td>
+								<td class="table__data">
+									<button class="repeat-button repeat-button_fill repeat-button_small-circle"
+										type="button">գրառում)</button>
+									<button
+										class="repeat-button repeat-button_fill repeat-button_small-circle popup-date-time-open-button"
+										type="button">ժամեր</button>
+									<button class="repeat-button repeat-button_small-circle succes-button popup-table-open-button"
+										type="button">գրառում)</button>
+								</td>
+							</tr>
+						</tbody>
+					</table>
+					<div class="table__grafik-wrapper" data-grafik-table>
+						<span class="table__filter-title">ֆիլտրում։ ըստ օրացույցի</span>
+						<span class="table__students-length" data-grafik-students-length>Քանակ։</span>
+						<table class="table table_grafik table-grid">
+							<thead class="table__header">
+								<tr class="table__row">
+									<th class="table__heading">№</th>
+									<th class="table__heading">Օր / ժամ</th>
+									<th class="table__heading">ՈՒսանող</th>
+								</tr>
+							</thead>
+							<tbody class="table__body">
+								<tr class="table__row">
+									<td class="table__data table__data_count"></td>
+									<td class="table__data">12.10.2023 / 13։00</td>
+									<td class="table__data">Պողոս Պողոսյան</td>
+								</tr>
+								<tr class="table__row">
+									<td class="table__data table__data_count"></td>
+									<td class="table__data">12.10.2023 / 13։00</td>
+									<td class="table__data">Վարդան Վարդանյան</td>
+								</tr>
+								<tr class="table__row">
+									<td class="table__data table__data_count"></td>
+									<td class="table__data">12.10.2023 / 13։00</td>
+									<td class="table__data">Պողոս Պողոսյան</td>
+								</tr>
+								<tr class="table__row">
+									<td class="table__data table__data_count"></td>
+									<td class="table__data">12.10.2023 / 13։00</td>
+									<td class="table__data">Վարդան Վարդանյան</td>
+								</tr>
+								<tr class="table__row">
+									<td class="table__data table__data_count"></td>
+									<td class="table__data">12.10.2023 / 13։00</td>
+									<td class="table__data">Վարդան Վարդանյան</td>
+								</tr>
+							</tbody>
+						</table>
+						<div class="table__grafik-control-box">
+							<button class="repeat-button repeat-button_fill repeat-button_small-circle" type="button">EMAIL</button>
+							<button class="repeat-button repeat-button_fill repeat-button_small-circle" type="button">PRINT</button>
+						</div>
+					</div>
+				</div>
+				<div class="tabs__panel">
+					<span class="table__students-length" data-students-length>Քանակ։</span>
+					<table class="table table-grid" data-big-table>
+						<thead class="table__header">
+							<tr class="table__row">
+								<th class="table__heading">№</th>
+								<th class="table__heading">Մնացորդ</th>
+								<th class="table__heading">ՈՒսանող</th>
+								<th class="table__heading">Հեռ</th>
+								<th class="table__heading">Ավարտ</th>
+								<th class="table__heading"><!-- Այստեղ պիտի դատարկ լինի արա)--></th>
+							</tr>
+						</thead>
+						<tbody class="table__body">
+							<tr class="table__row">
+								<td class="table__data table__data_count"></td>
+								<td class="table__data">10</td>
+								<td class="table__data">Պողոս Պողոսյան</td>
+								<td class="table__data">+37455622522</td>
+								<td class="table__data">01.10.2024</td>
+								<td class="table__data">
+									<button class="repeat-button repeat-button_fill repeat-button_small-circle"
+										type="button">գրառում)</button>
+									<button
+										class="repeat-button repeat-button_fill repeat-button_small-circle popup-date-time-open-button"
+										type="button">ժամեր</button>
+									<button class="repeat-button repeat-button_small-circle disabled-button"
+										type="button">գրառում)</button>
+								</td>
+							</tr>
+							<tr class="table__row">
+								<td class="table__data table__data_count"></td>
+								<td class="table__data">7</td>
+								<td class="table__data">Վարդան Վարդանյան</td>
+								<td class="table__data">+37455622522</td>
+								<td class="table__data">01.10.2024</td>
+								<td class="table__data">
+									<button class="repeat-button repeat-button_fill repeat-button_small-circle"
+										type="button">գրառում)</button>
+									<button
+										class="repeat-button repeat-button_fill repeat-button_small-circle popup-date-time-open-button"
+										type="button">ժամեր</button>
+									<button class="repeat-button repeat-button_small-circle disabled-button"
+										type="button">գրառում)</button>
+								</td>
+							</tr>
+							<tr class="table__row">
+								<td class="table__data table__data_count"></td>
+								<td class="table__data">0</td>
+								<td class="table__data">Վարդան Վարդանյան</td>
+								<td class="table__data">+37455622522</td>
+								<td class="table__data">01.10.2024</td>
+								<td class="table__data">
+									<button class="repeat-button repeat-button_fill repeat-button_small-circle"
+										type="button">գրառում)</button>
+									<button
+										class="repeat-button repeat-button_fill repeat-button_small-circle popup-date-time-open-button"
+										type="button">ժամեր</button>
+									<button class="repeat-button repeat-button_small-circle succes-button popup-table-open-button"
+										type="button">գրառում)</button>
+								</td>
+							</tr>
+							<tr class="table__row">
+								<td class="table__data table__data_count"></td>
+								<td class="table__data">10</td>
+								<td class="table__data">Պողոս Պողոսյան</td>
+								<td class="table__data">+37455622522</td>
+								<td class="table__data">01.10.2024</td>
+								<td class="table__data">
+									<button class="repeat-button repeat-button_fill repeat-button_small-circle"
+										type="button">գրառում)</button>
+									<button
+										class="repeat-button repeat-button_fill repeat-button_small-circle popup-date-time-open-button"
+										type="button">ժամեր</button>
+									<button class="repeat-button repeat-button_small-circle disabled-button"
+										type="button">գրառում)</button>
+								</td>
+							</tr>
+							<tr class="table__row">
+								<td class="table__data table__data_count"></td>
+								<td class="table__data">7</td>
+								<td class="table__data">Վարդան Վարդանյան</td>
+								<td class="table__data">+37455622522</td>
+								<td class="table__data">01.10.2024</td>
+								<td class="table__data">
+									<button class="repeat-button repeat-button_fill repeat-button_small-circle"
+										type="button">գրառում)</button>
+									<button
+										class="repeat-button repeat-button_fill repeat-button_small-circle popup-date-time-open-button"
+										type="button">ժամեր</button>
+									<button class="repeat-button repeat-button_small-circle disabled-button"
+										type="button">գրառում)</button>
+								</td>
+							</tr>
+							<tr class="table__row">
+								<td class="table__data table__data_count"></td>
+								<td class="table__data">0</td>
+								<td class="table__data">Վարդան Վարդանյան</td>
+								<td class="table__data">+37455622522</td>
+								<td class="table__data">01.10.2024</td>
+								<td class="table__data">
+									<button class="repeat-button repeat-button_fill repeat-button_small-circle"
+										type="button">գրառում)</button>
+									<button
+										class="repeat-button repeat-button_fill repeat-button_small-circle popup-date-time-open-button"
+										type="button">ժամեր</button>
+									<button class="repeat-button repeat-button_small-circle succes-button popup-table-open-button"
+										type="button">գրառում)</button>
+								</td>
+							</tr>
+						</tbody>
+					</table>
+					<div class="table__grafik-wrapper" data-grafik-table>
+						<span class="table__filter-title">ֆիլտրում։ ըստ օրացույցի</span>
+						<span class="table__students-length" data-grafik-students-length>Քանակ։</span>
+						<table class="table table_grafik table-grid">
+							<thead class="table__header">
+								<tr class="table__row">
+									<th class="table__heading">№</th>
+									<th class="table__heading">Օր / ժամ</th>
+									<th class="table__heading">ՈՒսանող</th>
+								</tr>
+							</thead>
+							<tbody class="table__body">
+								<tr class="table__row">
+									<td class="table__data table__data_count"></td>
+									<td class="table__data">12.10.2023 / 13։00</td>
+									<td class="table__data">Պողոս Պողոսյան</td>
+								</tr>
+								<tr class="table__row">
+									<td class="table__data table__data_count"></td>
+									<td class="table__data">12.10.2023 / 13։00</td>
+									<td class="table__data">Վարդան Վարդանյան</td>
+								</tr>
+								<tr class="table__row">
+									<td class="table__data table__data_count"></td>
+									<td class="table__data">12.10.2023 / 13։00</td>
+									<td class="table__data">Վարդան Վարդանյան</td>
+								</tr>
+								<tr class="table__row">
+									<td class="table__data table__data_count"></td>
+									<td class="table__data">12.10.2023 / 13։00</td>
+									<td class="table__data">Պողոս Պողոսյան</td>
+								</tr>
+								<tr class="table__row">
+									<td class="table__data table__data_count"></td>
+									<td class="table__data">12.10.2023 / 13։00</td>
+									<td class="table__data">Վարդան Վարդանյան</td>
+								</tr>
+								<tr class="table__row">
+									<td class="table__data table__data_count"></td>
+									<td class="table__data">12.10.2023 / 13։00</td>
+									<td class="table__data">Վարդան Վարդանյան</td>
+								</tr>
+							</tbody>
+						</table>
+						<div class="table__grafik-control-box">
+							<button class="repeat-button repeat-button_fill repeat-button_small-circle" type="button">EMAIL</button>
+							<button class="repeat-button repeat-button_fill repeat-button_small-circle" type="button">PRINT</button>
+						</div>
+					</div>
+				</div>
+				<div class="tabs__panel">
+					<span class="table__students-length" data-students-length>Քանակ։</span>
+					<table class="table table-grid" data-big-table>
+						<thead class="table__header">
+							<tr class="table__row">
+								<th class="table__heading">№</th>
+								<th class="table__heading">Մնացորդ</th>
+								<th class="table__heading">ՈՒսանող</th>
+								<th class="table__heading">Հեռ</th>
+								<th class="table__heading">Ավարտ</th>
+								<th class="table__heading"><!-- Այստեղ պիտի դատարկ լինի արա)--></th>
+							</tr>
+						</thead>
+						<tbody class="table__body">
+							<tr class="table__row">
+								<td class="table__data table__data_count"></td>
+								<td class="table__data">10</td>
+								<td class="table__data">Պողոս Պողոսյան</td>
+								<td class="table__data">+37455622522</td>
+								<td class="table__data">01.10.2024</td>
+								<td class="table__data">
+									<button class="repeat-button repeat-button_fill repeat-button_small-circle"
+										type="button">գրառում)</button>
+									<button
+										class="repeat-button repeat-button_fill repeat-button_small-circle popup-date-time-open-button"
+										type="button">ժամեր</button>
+									<button class="repeat-button repeat-button_small-circle disabled-button" data-disabled
+										type="button">գրառում)</button>
+								</td>
+							</tr>
+							<tr class="table__row">
+								<td class="table__data table__data_count"></td>
+								<td class="table__data">7</td>
+								<td class="table__data">Վարդան Վարդանյան</td>
+								<td class="table__data">+37455622522</td>
+								<td class="table__data">01.10.2024</td>
+								<td class="table__data">
+									<button class="repeat-button repeat-button_fill repeat-button_small-circle"
+										type="button">գրառում)</button>
+									<button
+										class="repeat-button repeat-button_fill repeat-button_small-circle popup-date-time-open-button"
+										type="button">ժամեր</button>
+									<button class="repeat-button repeat-button_small-circle disabled-button" data-disabled
+										type="button">գրառում)</button>
+								</td>
+							</tr>
+							<tr class="table__row">
+								<td class="table__data table__data_count"></td>
+								<td class="table__data">10</td>
+								<td class="table__data">Պողոս Պողոսյան</td>
+								<td class="table__data">+37455622522</td>
+								<td class="table__data">01.10.2024</td>
+								<td class="table__data">
+									<button class="repeat-button repeat-button_fill repeat-button_small-circle"
+										type="button">գրառում)</button>
+									<button
+										class="repeat-button repeat-button_fill repeat-button_small-circle popup-date-time-open-button"
+										type="button">ժամեր</button>
+									<button class="repeat-button repeat-button_small-circle disabled-button" data-disabled
+										type="button">գրառում)</button>
+								</td>
+							</tr>
+							<tr class="table__row">
+								<td class="table__data table__data_count"></td>
+								<td class="table__data">7</td>
+								<td class="table__data">Վարդան Վարդանյան</td>
+								<td class="table__data">+37455622522</td>
+								<td class="table__data">01.10.2024</td>
+								<td class="table__data">
+									<button class="repeat-button repeat-button_fill repeat-button_small-circle"
+										type="button">գրառում)</button>
+									<button
+										class="repeat-button repeat-button_fill repeat-button_small-circle popup-date-time-open-button"
+										type="button">ժամեր</button>
+									<button class="repeat-button repeat-button_small-circle disabled-button" data-disabled
+										type="button">գրառում)</button>
+								</td>
+							</tr>
+							<tr class="table__row">
+								<td class="table__data table__data_count"></td>
+								<td class="table__data">10</td>
+								<td class="table__data">Պողոս Պողոսյան</td>
+								<td class="table__data">+37455622522</td>
+								<td class="table__data">01.10.2024</td>
+								<td class="table__data">
+									<button class="repeat-button repeat-button_fill repeat-button_small-circle"
+										type="button">գրառում)</button>
+									<button
+										class="repeat-button repeat-button_fill repeat-button_small-circle popup-date-time-open-button"
+										type="button">ժամեր</button>
+									<button class="repeat-button repeat-button_small-circle disabled-button" data-disabled
+										type="button">գրառում)</button>
+								</td>
+							</tr>
+							<tr class="table__row">
+								<td class="table__data table__data_count"></td>
+								<td class="table__data">7</td>
+								<td class="table__data">Վարդան Վարդանյան</td>
+								<td class="table__data">+37455622522</td>
+								<td class="table__data">01.10.2024</td>
+								<td class="table__data">
+									<button class="repeat-button repeat-button_fill repeat-button_small-circle"
+										type="button">գրառում)</button>
+									<button
+										class="repeat-button repeat-button_fill repeat-button_small-circle popup-date-time-open-button"
+										type="button">ժամեր</button>
+									<button class="repeat-button repeat-button_small-circle disabled-button" data-disabled
+										type="button">գրառում)</button>
+								</td>
+							</tr>
+							<tr class="table__row">
+								<td class="table__data table__data_count"></td>
+								<td class="table__data">0</td>
+								<td class="table__data">Վարդան Վարդանյան</td>
+								<td class="table__data">+37455622522</td>
+								<td class="table__data">01.10.2024</td>
+								<td class="table__data">
+									<button class="repeat-button repeat-button_fill repeat-button_small-circle"
+										type="button">գրառում)</button>
+									<button
+										class="repeat-button repeat-button_fill repeat-button_small-circle popup-date-time-open-button"
+										type="button">ժամեր</button>
+									<button class="repeat-button repeat-button_small-circle succes-button popup-table-open-button"
+										type="button">գրառում)</button>
+								</td>
+							</tr>
+						</tbody>
+					</table>
+					<div class="table__grafik-wrapper" data-grafik-table>
+						<span class="table__filter-title">ֆիլտրում։ ըստ օրացույցի</span>
+						<span class="table__students-length" data-grafik-students-length>Քանակ։</span>
+						<table class="table table_grafik table-grid">
+							<thead class="table__header">
+								<tr class="table__row">
+									<th class="table__heading">№</th>
+									<th class="table__heading">Օր / ժամ</th>
+									<th class="table__heading">ՈՒսանող</th>
+								</tr>
+							</thead>
+							<tbody class="table__body">
+								<tr class="table__row">
+									<td class="table__data table__data_count"></td>
+									<td class="table__data">12.10.2023 / 13։00</td>
+									<td class="table__data">Պողոս Պողոսյան</td>
+								</tr>
+								<tr class="table__row">
+									<td class="table__data table__data_count"></td>
+									<td class="table__data">12.10.2023 / 13։00</td>
+									<td class="table__data">Վարդան Վարդանյան</td>
+								</tr>
+								<tr class="table__row">
+									<td class="table__data table__data_count"></td>
+									<td class="table__data">12.10.2023 / 13։00</td>
+									<td class="table__data">Պողոս Պողոսյան</td>
+								</tr>
+								<tr class="table__row">
+									<td class="table__data table__data_count"></td>
+									<td class="table__data">12.10.2023 / 13։00</td>
+									<td class="table__data">Վարդան Վարդանյան</td>
+								</tr>
+								<tr class="table__row">
+									<td class="table__data table__data_count"></td>
+									<td class="table__data">12.10.2023 / 13։00</td>
+									<td class="table__data">Պողոս Պողոսյան</td>
+								</tr>
+								<tr class="table__row">
+									<td class="table__data table__data_count"></td>
+									<td class="table__data">12.10.2023 / 13։00</td>
+									<td class="table__data">Վարդան Վարդանյան</td>
+								</tr>
+								<tr class="table__row">
+									<td class="table__data table__data_count"></td>
+									<td class="table__data">12.10.2023 / 13։00</td>
+									<td class="table__data">Վարդան Վարդանյան</td>
+								</tr>
+							</tbody>
+						</table>
+						<div class="table__grafik-control-box">
+							<button class="repeat-button repeat-button_fill repeat-button_small-circle " type="button">EMAIL</button>
+							<button class="repeat-button repeat-button_fill repeat-button_small-circle" type="button">PRINT</button>
+						</div>
+					</div>
+				</div>
+				<div class="tabs__panel">
+					<span class="table__students-length" data-students-length>Քանակ։</span>
+					<table class="table table-grid" data-big-table>
+						<thead class="table__header">
+							<tr class="table__row">
+								<th class="table__heading">№</th>
+								<th class="table__heading">Մնացորդ</th>
+								<th class="table__heading">ՈՒսանող</th>
+								<th class="table__heading">Հեռ</th>
+								<th class="table__heading">Ավարտ</th>
+								<th class="table__heading"><!-- Այստեղ պիտի դատարկ լինի արա)--></th>
+							</tr>
+						</thead>
+						<tbody class="table__body">
+							<tr class="table__row">
+								<td class="table__data table__data_count"></td>
+								<td class="table__data">10</td>
+								<td class="table__data">Պողոս Պողոսյան</td>
+								<td class="table__data">+37455622522</td>
+								<td class="table__data">01.10.2024</td>
+								<td class="table__data">
+									<button class="repeat-button repeat-button_fill repeat-button_small-circle"
+										type="button">գրառում)</button>
+									<button
+										class="repeat-button repeat-button_fill repeat-button_small-circle popup-date-time-open-button"
+										type="button">ժամեր</button>
+									<button class="repeat-button repeat-button_small-circle disabled-button"
+										type="button">գրառում)</button>
+								</td>
+							</tr>
+							<tr class="table__row">
+								<td class="table__data table__data_count"></td>
+								<td class="table__data">10</td>
+								<td class="table__data">Պողոս Պողոսյան</td>
+								<td class="table__data">+37455622522</td>
+								<td class="table__data">01.10.2024</td>
+								<td class="table__data">
+									<button class="repeat-button repeat-button_fill repeat-button_small-circle"
+										type="button">գրառում)</button>
+									<button
+										class="repeat-button repeat-button_fill repeat-button_small-circle popup-date-time-open-button"
+										type="button">ժամեր</button>
+									<button class="repeat-button repeat-button_small-circle disabled-button"
+										type="button">գրառում)</button>
+								</td>
+							</tr>
+							<tr class="table__row">
+								<td class="table__data table__data_count"></td>
+								<td class="table__data">10</td>
+								<td class="table__data">Պողոս Պողոսյան</td>
+								<td class="table__data">+37455622522</td>
+								<td class="table__data">01.10.2024</td>
+								<td class="table__data">
+									<button class="repeat-button repeat-button_fill repeat-button_small-circle"
+										type="button">գրառում)</button>
+									<button
+										class="repeat-button repeat-button_fill repeat-button_small-circle popup-date-time-open-button"
+										type="button">ժամեր</button>
+									<button class="repeat-button repeat-button_small-circle disabled-button"
+										type="button">գրառում)</button>
+								</td>
+							</tr>
+							<tr class="table__row">
+								<td class="table__data table__data_count"></td>
+								<td class="table__data">10</td>
+								<td class="table__data">Պողոս Պողոսյան</td>
+								<td class="table__data">+37455622522</td>
+								<td class="table__data">01.10.2024</td>
+								<td class="table__data">
+									<button class="repeat-button repeat-button_fill repeat-button_small-circle"
+										type="button">գրառում)</button>
+									<button
+										class="repeat-button repeat-button_fill repeat-button_small-circle popup-date-time-open-button"
+										type="button">ժամեր</button>
+									<button class="repeat-button repeat-button_small-circle disabled-button"
+										type="button">գրառում)</button>
+								</td>
+							</tr>
+							<tr class="table__row">
+								<td class="table__data table__data_count"></td>
+								<td class="table__data">10</td>
+								<td class="table__data">Պողոս Պողոսյան</td>
+								<td class="table__data">+37455622522</td>
+								<td class="table__data">01.10.2024</td>
+								<td class="table__data">
+									<button class="repeat-button repeat-button_fill repeat-button_small-circle"
+										type="button">գրառում)</button>
+									<button
+										class="repeat-button repeat-button_fill repeat-button_small-circle popup-date-time-open-button"
+										type="button">ժամեր</button>
+									<button class="repeat-button repeat-button_small-circle disabled-button"
+										type="button">գրառում)</button>
+								</td>
+							</tr>
+							<tr class="table__row">
+								<td class="table__data table__data_count"></td>
+								<td class="table__data">10</td>
+								<td class="table__data">Պողոս Պողոսյան</td>
+								<td class="table__data">+37455622522</td>
+								<td class="table__data">01.10.2024</td>
+								<td class="table__data">
+									<button class="repeat-button repeat-button_fill repeat-button_small-circle"
+										type="button">գրառում)</button>
+									<button
+										class="repeat-button repeat-button_fill repeat-button_small-circle popup-date-time-open-button"
+										type="button">ժամեր</button>
+									<button class="repeat-button repeat-button_small-circle disabled-button"
+										type="button">գրառում)</button>
+								</td>
+							</tr>
+							<tr class="table__row">
+								<td class="table__data table__data_count"></td>
+								<td class="table__data">7</td>
+								<td class="table__data">Վարդան Վարդանյան</td>
+								<td class="table__data">+37455622522</td>
+								<td class="table__data">01.10.2024</td>
+								<td class="table__data">
+									<button class="repeat-button repeat-button_fill repeat-button_small-circle"
+										type="button">գրառում)</button>
+									<button
+										class="repeat-button repeat-button_fill repeat-button_small-circle popup-date-time-open-button"
+										type="button">ժամեր</button>
+									<button class="repeat-button repeat-button_small-circle disabled-button"
+										type="button">գրառում)</button>
+								</td>
+							</tr>
+							<tr class="table__row">
+								<td class="table__data table__data_count"></td>
+								<td class="table__data">0</td>
+								<td class="table__data">Վարդան Վարդանյան</td>
+								<td class="table__data">+37455622522</td>
+								<td class="table__data">01.10.2024</td>
+								<td class="table__data">
+									<button class="repeat-button repeat-button_fill repeat-button_small-circle"
+										type="button">գրառում)</button>
+									<button
+										class="repeat-button repeat-button_fill repeat-button_small-circle popup-date-time-open-button"
+										type="button">ժամեր</button>
+									<button class="repeat-button repeat-button_small-circle succes-button popup-table-open-button"
+										type="button">գրառում)</button>
+								</td>
+							</tr>
+						</tbody>
+					</table>
+					<div class="table__grafik-wrapper" data-grafik-table>
+						<span class="table__filter-title">ֆիլտրում։ ըստ օրացույցի</span>
+						<span class="table__students-length" data-grafik-students-length>Քանակ։</span>
+						<table class="table table_grafik table-grid">
+							<thead class="table__header">
+								<tr class="table__row">
+									<th class="table__heading">№</th>
+									<th class="table__heading">Օր / ժամ</th>
+									<th class="table__heading">ՈՒսանող</th>
+								</tr>
+							</thead>
+							<tbody class="table__body">
+								<tr class="table__row">
+									<td class="table__data table__data_count"></td>
+									<td class="table__data">12.10.2023 / 13։00</td>
+									<td class="table__data">Պողոս Պողոսյան</td>
+								</tr>
+								<tr class="table__row">
+									<td class="table__data table__data_count"></td>
+									<td class="table__data">12.10.2023 / 13։00</td>
+									<td class="table__data">Պողոս Պողոսյան</td>
+								</tr>
+								<tr class="table__row">
+									<td class="table__data table__data_count"></td>
+									<td class="table__data">12.10.2023 / 13։00</td>
+									<td class="table__data">Պողոս Պողոսյան</td>
+								</tr>
+								<tr class="table__row">
+									<td class="table__data table__data_count"></td>
+									<td class="table__data">12.10.2023 / 13։00</td>
+									<td class="table__data">Պողոս Պողոսյան</td>
+								</tr>
+								<tr class="table__row">
+									<td class="table__data table__data_count"></td>
+									<td class="table__data">12.10.2023 / 13։00</td>
+									<td class="table__data">Պողոս Պողոսյան</td>
+								</tr>
+								<tr class="table__row">
+									<td class="table__data table__data_count"></td>
+									<td class="table__data">12.10.2023 / 13։00</td>
+									<td class="table__data">Պողոս Պողոսյան</td>
+								</tr>
+								<tr class="table__row">
+									<td class="table__data table__data_count"></td>
+									<td class="table__data">12.10.2023 / 13։00</td>
+									<td class="table__data">Վարդան Վարդանյան</td>
+								</tr>
+								<tr class="table__row">
+									<td class="table__data table__data_count"></td>
+									<td class="table__data">12.10.2023 / 13։00</td>
+									<td class="table__data">Վարդան Վարդանյան</td>
+								</tr>
+							</tbody>
+						</table>
+						<div class="table__grafik-control-box">
+							<button class="repeat-button repeat-button_small-circle repeat-button_fill" type="button">EMAIL</button>
+							<button class="repeat-button repeat-button_small-circle repeat-button_fill" type="button">PRINT</button>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		@include('./popup.html')
+</section>

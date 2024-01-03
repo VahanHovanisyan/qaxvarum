@@ -1,0 +1,72 @@
+.table {
+	counter-reset: count;
+	grid-template-columns: auto 1fr 1fr 1fr 1fr minmax(370px, 2fr);
+	margin-bottom: 20px;
+	border: 3px solid var(--dark-color);
+	border-radius: 20px;
+	overflow-x: auto;
+	&_grafik {
+		grid-column: 1 / 2;
+		max-width: 400px;
+		overflow-x: auto;
+		grid-template-columns: auto 1fr 1fr;
+	}
+
+	&__header {
+	}
+
+	&__row {
+
+	}
+
+	&__heading {
+		padding: 5px;
+		outline: 1px solid var(--dark-color);
+		text-align: center;
+		font-size: 16px;
+		color: var(--dark-color);
+		@media (min-width: 768px) {
+			font-size: 20px;
+		}
+	}
+
+	&__body {
+
+	}
+
+	&__grafik-wrapper {
+		display: grid;
+		gap: 15px;
+		grid-template-columns: 1fr;
+		justify-items: start;
+		align-items: end;
+		@media (min-width: 576px) {
+			grid-template-columns: auto 1fr;
+		}
+	}
+
+	&__students-length {
+		display: block;
+		margin-bottom: 20px;
+		grid-column: 1/2;
+	}
+
+	&__grafik-control-box {
+		grid-column: 1/2;
+		@media (min-width: 576px) {
+			grid-column: 2/3;
+		}
+	}
+
+	&__data {
+		padding: 5px;
+		outline: 1px solid var(--dark-color);
+		text-align: center;
+		&_count {
+			counter-increment: count;
+			&::before {
+				content: counter(count);
+			}
+		}
+	}
+}

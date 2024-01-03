@@ -1,0 +1,22 @@
+@import "./config-scss/vars.scss";// vars
+@import "./config-scss/mixin.scss";// mixin
+@import "./config-scss/fonts.scss";// fonts
+@import "./config-scss/global.scss";// global
+@import "./config-scss/reset-class.scss";// reset-class
+@import "./config-scss/mix-class.scss";// mix-class
+@import "./common.blocks/page.scss";// page
+@import "./common.blocks/page__body.scss";// page__body
+@import "./common.blocks/nav.scss";// nav
+@import "./common.blocks/header.scss";// header
+@import "./common.blocks/main.scss";// main
+
+@import "./common.blocks/table.scss";//	table
+@import "./common.blocks/tabs.scss";//	tabs
+
+@import "./common.blocks/popup.scss";// popup
+
+// sections
+@import "./common.blocks/hero.scss";// hero
+// /sections
+
+@import "./common.blocks/footer.scss";// footer

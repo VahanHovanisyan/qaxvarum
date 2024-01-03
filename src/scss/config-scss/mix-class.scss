@@ -1,0 +1,101 @@
+.container {
+	margin: 0 auto;
+	padding: 0 var(--container-offset);
+	max-width: var(--container-width);
+}
+
+.title {
+	margin: 0;
+}
+
+.subtitle {
+	display: block;
+}
+
+.title-word-important {
+}
+
+.text {
+	margin: 0;
+}
+
+.link {
+}
+
+.repeat-button {
+	position: relative;
+	padding: 10px 15px;
+	border: 2px solid var(--dark-color);
+	border-radius: 10px;
+	background-color: var(--light-color);
+	color: var(--dark-color);
+	cursor: pointer;
+
+	&_small-circle {
+		padding: 5px 15px;
+		border-radius: 20px;
+	}
+
+	&_fill {
+		background-color: var(--dark-color);
+		color: var(--light-color);
+	}
+}
+
+.disabled-button {
+	background-color: #c5bebe;
+	color: #867f7f;
+	cursor: auto;
+	pointer-events: none;
+}
+
+.succes-button {
+	pointer-events: all;
+	background-color: #20e020;
+	border-color: #20e020;
+	color: var(--light-color);
+}
+
+.img {
+	max-width: 100%;
+	height: auto;
+	object-fit: cover;
+}
+
+.ibg {
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+
+.bg {
+	background-position: 50%;
+	background-size: cover;
+	background-repeat: no-repeat;
+	height: 100vh;
+	min-height: 650px;
+	@media (max-width: 575.98px) {
+		height: auto;
+	}
+}
+
+.scroll-snap-section {
+	scroll-snap-align: start;
+	scroll-snap-stop: always;
+	@media (pointer: coarse) {
+		scroll-snap-align: none;
+		scroll-snap-stop: normal;
+	}
+}
+
+.link {
+	text-decoration: none;
+	color: inherit;
+}
+
+.js-focus-visible :focus:not(.focus-visible) {
+	outline: none;
+}
