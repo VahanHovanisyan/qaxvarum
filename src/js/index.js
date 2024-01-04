@@ -143,9 +143,15 @@ currentTabs.addEventListener('click', function (e) {
 			tabsPanel.querySelector('[data-students-length]').style.display = 'block'
 			tabsPanel.querySelector('[data-students-length]').textContent = 'Քանակ։' +
 				tabsPanel.querySelector('[data-big-table] .table__body').querySelectorAll('.table__row').length;
-		})
-		tabsButtons.forEach(tabsButton => {
-			tabsButton.classList.add('tabs__button_active')
+			tabsButtons.forEach(tabsButton => {
+				tabsButton.classList.add('tabs__button_active')
+
+				if (tabsButton.id === tabsPanel.getAttribute('aria-labelledby')) {
+					tabsPanel.querySelectorAll('.table__caption').forEach(caption => {
+						caption.textContent = tabsButton.querySelector('[data-teacher-name]').textContent;
+					})
+				}
+			})
 		})
 	}
 
